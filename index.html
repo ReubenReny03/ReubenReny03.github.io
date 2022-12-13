@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <title>Hello, world!</title>
+        </head>
+        <body>
+          <h1 id="text">Hello, world!</h1>
+          <script>
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      
+            setInterval(function() {
+              var date = new Date();
+              var day = days[date.getDay()];
+              if (day="Tuesday") {
+                document.getElementById("text").innerHTML = "Hello " + day + "<br> 20CS2036 Operating Systems Batch 5 - CSLH006 <br> 20CS2008 Computer Networks Batch 3 - CSLH003 <br>	20CS2008L Computer Networks Batch 1 - CTC Lab 1	<br> 20CS2008L Computer Networks Batch 1 - CTC Lab 1 <br> 20CS2018 Design and Analysis of Algorithm Batch 1 - CSLH001 <br> 20MS2007 Business Plan Batch 4 - CSLH001" ;
+
+            }
+            else{
+                document.getElementById("text").innerHTML = "Hello, world! " + day;
+            }
+              
+            }, 1000);
+          </script>
+        </body>
+      </html>
